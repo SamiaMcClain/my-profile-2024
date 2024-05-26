@@ -143,6 +143,33 @@ a:hover {
     }
 }
 
+@media (max-width: 360px) {
+    .container {
+        width: 90%;
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    #portrait {
+        width: 100px;
+        height: 100px;
+    }
+}
 .banner-container {
     position: relative; /* Set relative positioning */
 }
