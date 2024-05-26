@@ -1,0 +1,223 @@
+/* Colors and fonts */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: floralwhite;
+    font-family: Helvetica;
+    color: rgb(51, 41,28);
+    font-size: 14px;
+    letter-spacing: 1.29px;
+    line-height: 15px;
+    font-weight: 350;
+    text-align: center; /* Center align all text */
+    flex-direction: column; /* Ensure content flows vertically */
+}
+
+h1, h2, h3, h4 {
+    font-family: "Cormorant Garamond", serif;
+    background-color: floralwhite;
+    text-align: center;
+    color: rgb(51, 41,28);
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 56px;
+    letter-spacing: 6px;
+    line-height: 15px;
+    text-decoration: none;
+    text-justify: center;
+    font-kerning: -20px;
+}
+
+h2 {
+    font-size: 28px;
+    letter-spacing: 1.29px;
+    line-height: 15px;
+    font-weight: normal;
+    text-justify: center;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: 1.29px;
+    line-height: 18px;
+    font-weight: normal;
+    text-justify: center;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    letter-spacing: 1.29px;
+    line-height: 18px;
+    font-weight: 500;
+    text-justify: center;
+    text-align: center;
+}
+
+a {
+    font-family: "Red Hat Display", sans-serif;
+    text-decoration: none;
+    color: rgb(51, 41,28);
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center; /* Center align links */
+}
+
+a:hover {
+    color: rgb(135, 120,99);
+    font-weight: normal;
+    font-size: 16px;
+}
+#card-cv a {font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+}
+
+/* Custom design with class */
+
+.container {
+    width: 700px;
+    margin: 40 auto; /* Center the container horizontally */
+    background: floralwhite;
+    text-align: center; /* Center text inside the container */
+}
+@media (max-width: 760px) {
+    .container {
+        width: 90%;
+        padding: 0 20px;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    #portrait {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        width: 90%;
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    #portrait {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.banner-container {
+    position: relative; /* Set relative positioning */
+}
+
+
+#portrait {
+    position: absolute; /* Absolute positioning for layering */
+    top: 90%; /* Adjust as needed to position vertically */
+    left: 50%; /* Adjust as needed to position horizontally */
+    transform: translate(-50%, -50%); /* Center the portrait */
+    border-radius: 50%; /* Make the portrait circular */
+    border: 5px solid rgb(51, 41,28); 
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    z-index: 2; /* Ensure portrait is above banner */
+}
+
+#Banner {
+    width: 100%; /* Make the banner fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure banner is below portrait */
+}
+
+.element-heading {
+    margin-top: 80px;
+    margin-bottom:25px;
+}
+
+.card-services, #card-cv, .card-subscribe, .inline-links {
+    background-color:floralwhite;
+    padding: 10px;
+    width: 100%; /* Ensure consistent width */
+    max-width: 900px; /* Ensure the width does not exceed the container's width */
+    border: solid;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1); /* Light shadow */
+    margin-left: auto; /* Center the sections horizontally */
+    margin-right: auto; /* Center the sections horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.card-service {
+    background-color: floralwhite;
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+    border-color: 0, 0, 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1); /* Light shadow */
+    display: none; /* Hide by default */
+}
+
+.card-services:hover .card-service {
+    display: block; /* Show on hover */
+}
+.card-subscribe{
+    margin-bottom: 40px;
+}
+
+#Follow-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.btn-connect {
+    background-color:rgb(51, 41,28);
+    color: floralwhite;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 10px 20px; /* Adjust padding for the button */
+}
+
+.btn-connect:hover {
+    background-color:rgb(135, 120,99);
+    color: floralwhite;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 10px 20px; /* Adjust padding for the button */
+}
